@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-link {
+  @apply border-t-2 border-transparent pt-3 hover:text-accent hover:border-accent transition-all duration-300 ease-in-out;
+}
+
+.service-title {
+  @apply font-secondFamily text-2xl text-subtitle capitalize mt-7 mb-6;
+}
+
+.service-description {
+  @apply font-light text-xl text-text text-center;
+}
+
+.article-title {
+  @apply font-secondFamily text-2xl capitalize text-title leading-[1.2] tracking-[-0.01em] mt-7;
+}
+
+.article-description {
+  @apply text-lg font-light text-text my-7 flex-grow;
+}

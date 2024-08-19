@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Marcellus&display=swap"
+      rel="stylesheet"
+    />
+    <title>Aphrodite</title>
+  </head>
+  <body class="font-main w-full">
+    <header class="container pt-7 bg-bgColor">
+      <div class="w-full md:max-w-tablet lg:max-w-desktop mx-auto">
+        <div class="relative flex justify-between items-center mb-24 pb-6">
+          <div class="flex items-center gap-3">
+            <img src="images/logo.png" alt="logo" />
+            <p class="font-secondFamily text-3xl text-accent uppercase">
+              Aphrodite
+            </p>
+          </div>
+          <div class="hidden items-center gap-24 lg:flex">
+            <nav>
+              <ul class="flex text-base uppercase text-border gap-16">
+                <li>
+                  <a href="#" class="nav-link">home</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link">about</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link">service</a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link">pages</a>
+                </li>
+              </ul>
+            </nav>
+            <a
+              href="#"
+              class="flex justify-center items-center w-12 h-12 border-2 border-border rounded-full hover:border-accent group"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#adadad"
+                class="size-6 transition-colors duration-300 group-hover:fill-accent"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </div>
+          <button class="flex justify-center items-center lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#519DBC"
+              class="w-8 h-8"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="text-center lg:flex">
+          <div class="lg:w-4/6">
+            <span class="text-xl text-subtitle uppercase lg:text-2xl"
+              >the beauty center</span
+            >
+            <h1 class="heading-primary mb-8">suitable for all skin problems</h1>
+            <div class="flex items-center justify-center flex-row">
+              <button class="button">
+                book now
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <span class="mx-7 text-lg text-title font-light">OR</span>
+              <button
+                class="flex justify-center items-center w-12 h-12 bg-accent rounded-full transition-all duration-300 ease-in-out hover:shadow-mainShadow"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="white"
+                  class="size-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="flex pt-3 mt-28 border-t-thinFrame border-border gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#5c5c5c"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                />
+              </svg>
+              <p
+                class="text-lg text-text text-left font-light mb-5 md:text-xl lg:mb-24"
+              >
+                Care for skin and natural beauty through professional treatments
+                using natural products
+              </p>
+            </div>
+          </div>
+          <div
+            class="relative flex flex-col justify-end items-center mt-12 h-heightGirl self-end"
+          >
+            <img
+              src="images/girl-with-wreath.png"
+              alt="girl with wreath"
+              class="relative max-lg:h-heightGirl md:w-1/2 lg:w-full"
+            />
+            <img
+              src="images/flower-illustration.png"
+              alt="flower illustration"
+              class="absolute bottom-0 z-10 w-full"
+            />
+            <div
+              class="absolute bottom-4 flex justify-center items-center text-white gap-5"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="size-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M11.78 5.22a.75.75 0 0 1 0 1.06L8.06 10l3.72 3.72a.75.75 0 1 1-1.06 1.06l-4.25-4.25a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span>01</span>
+              <svg
+                width="98"
+                height="2"
+                viewBox="0 0 98 2"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1L97 1.00001"
+                  stroke="#E0E0E0"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <span>04</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="size-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="container">
+        <div class="w-full mx-auto md:max-w-tablet lg:max-w-desktop">
+          <div class="flex flex-col justify-between items-center mb-24">
+            <div class="text-center">
+              <span class="subtitle">our services</span>
+              <h2 class="heading-secondary">Beauty Rituals of Our Offer</h2>
+            </div>
+            <div>
+              <ul class="flex flex-col gap-14 lg:flex-row">
+                <li class="flex flex-col items-center">
+                  <div
+                    class="flex justify-center items-center w-32 h-32 border-2 border-subtitle rounded-full"
+                  >
+                    <div
+                      class="flex justify-center items-center w-28 h-28 bg-subtitle rounded-full"
+                    >
+                      <img
+                        src="images/facial-treatments.png"
+                        alt="facial treatments"
+                      />
+                    </div>
+                  </div>
+                  <div class="flex flex-col items-center">
+                    <h3 class="service-title">facial treatments</h3>
+                    <p class="service-description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex flex-col items-center">
+                  <div
+                    class="flex justify-center items-center w-32 h-32 border-2 border-accent rounded-full"
+                  >
+                    <div
+                      class="flex justify-center items-center w-28 h-28 bg-accent rounded-full"
+                    >
+                      <img
+                        src="images/skin-tightening.png"
+                        alt="skin tightening"
+                      />
+                    </div>
+                  </div>
+                  <div class="flex flex-col items-center">
+                    <h3 class="service-title">Skin Tightening</h3>
+                    <p class="service-description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex flex-col items-center">
+                  <div
+                    class="flex justify-center items-center w-32 h-32 border-2 border-pink rounded-full"
+                  >
+                    <div
+                      class="flex justify-center items-center w-28 h-28 bg-pink rounded-full"
+                    >
+                      <img
+                        src="images/skin-tightening.png"
+                        alt="skin tightening"
+                      />
+                    </div>
+                  </div>
+                  <div class="flex flex-col items-center">
+                    <h3 class="service-title">Healthy Products</h3>
+                    <p class="service-description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container lg:flex">
+        <div
+          class="w-full mx-auto md:max-w-tablet lg:max-w-desktop lg:flex lg:gap-14"
+        >
+          <div
+            class="flex flex-col justify-between items-center text-center mb-24 lg:justify-center lg:w-1/2 lg:text-left lg:mb-0"
+          >
+            <span class="subtitle lg:self-start">about us</span>
+            <h2 class="heading-secondary">crafting beauty beyond boundaries</h2>
+            <p class="text-lg text-text font-light">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco.
+            </p>
+            <button class="painted-button">
+              discover more
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="size-5 ml-2"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="w-full bg-accent py-16 lg:w-1/2">
+            <div
+              class="max-w-screen flex justify-between gap-8 overflow-hidden"
+            >
+              <img
+                src="images/beauty-mask.jpg"
+                alt="beauty mask"
+                class="w-1/2"
+              />
+              <img
+                src="images/beauty-procedure.jpg"
+                alt="beauty procedure"
+                class="w-1/2"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <div class="w-full mx-auto md:max-w-tablet lg:max-w-desktop">
+          <div
+            class="flex flex-col justify-between items-center text-center mb-24"
+          >
+            <div class="text-center">
+              <span class="subtitle">meet the doctors</span>
+              <h2 class="heading-secondary">Discover our experts</h2>
+            </div>
+            <div class="lg:w-full">
+              <ul class="flex flex-col justify-between gap-12 lg:flex-row">
+                <li
+                  class="transition-transform duration-300 ease-in-out hover:transform hover:scale-mainScale"
+                >
+                  <img
+                    src="images/dr-hannah.jpg"
+                    alt="dr hannah"
+                    class="border-8 border-pink"
+                  />
+                  <div class="mt-7">
+                    <span class="text-base text-border uppercase"
+                      >Plastic Surgeon</span
+                    >
+                    <h3
+                      class="font-secondFamily text-2xl capitalize text-title mt-2"
+                    >
+                      Dr. Hannah Wagner
+                    </h3>
+                  </div>
+                </li>
+                <li
+                  class="transition-transform duration-300 ease-in-out hover:transform hover:scale-[1.02]"
+                >
+                  <img
+                    src="images/dr-bryan.jpg"
+                    alt="dr bryan"
+                    class="border-8 border-accent"
+                  />
+                  <div class="mt-7">
+                    <span class="text-base text-accent uppercase"
+                      >anesthesiologist</span
+                    >
+                    <h3
+                      class="font-secondFamily text-2xl capitalize text-title mt-2"
+                    >
+                      Dr. Bryan Hunter
+                    </h3>
+                  </div>
+                </li>
+                <li
+                  class="transition-transform duration-300 ease-in-out hover:transform hover:scale-[1.02]"
+                >
+                  <img
+                    src="images/dr-sarah.jpg"
+                    alt="dr sarah"
+                    class="border-8 border-pink"
+                  />
+                  <div class="mt-7">
+                    <span class="text-base text-border uppercase"
+                      >dermatologist</span
+                    >
+                    <h3
+                      class="font-secondFamily text-2xl capitalize text-title mt-2"
+                    >
+                      Dr. Sarah Nelson
+                    </h3>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container p-0">
+        <div
+          class="w-full mx-auto md:max-w-tablet lg:max-w-desktop overflow-hidden"
+        >
+          <ul class="grid grid-cols-2 gap-16 md:grid-cols-4 lg:grid-cols-4">
+            <li>
+              <img
+                src="images/first-brand.png"
+                alt="first brand"
+                class="w-full"
+              />
+            </li>
+            <li>
+              <img
+                src="images/second-brand.png"
+                alt="second brand"
+                class="w-full"
+              />
+            </li>
+            <li>
+              <img
+                src="images/third-brand.png"
+                alt="third brand"
+                class="w-full"
+              />
+            </li>
+            <li>
+              <img
+                src="images/fourth-brand.png"
+                alt="fourth brand"
+                class="w-full"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="container">
+        <div class="justify-center lg:flex lg:items-center">
+          <div>
+            <img
+              src="images/procedure-completed.jpg"
+              alt="procedure completed"
+              class="w-full"
+            />
+          </div>
+          <div class="bg-accent p-14">
+            <h2 class="heading-secondary text-white text-center mt-0">
+              Ready to glow with us?
+            </h2>
+            <form class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+              <div class="w-full mb-5">
+                <input
+                  type="text"
+                  id="name"
+                  class="w-full py-2 px-3 font-secondFamily text-white placeholder-white bg-transparent border-b-thinFrame pb-2 focus:outline-none"
+                  placeholder="Your name"
+                />
+              </div>
+              <div class="w-full mb-5">
+                <input
+                  type="email"
+                  id="email"
+                  class="w-full py-2 px-3 font-secondFamily text-white placeholder-white bg-transparent border-b-thinFrame pb-2 focus:outline-none"
+                  placeholder="Your email"
+                />
+              </div>
+              <div class="w-full mb-5">
+                <input
+                  type="date"
+                  id="date"
+                  class="w-full py-2 px-3 text-text leading-tight shadow-mainShadow rounded focus:outline-none focus:shadow-outline"
+                />
+              </div>
+              <div class="w-full mb-8">
+                <select
+                  id="service"
+                  class="w-full py-2 px-3 text-text leading-tight shadow-mainShadow rounded focus:outline-none focus:shadow-outline"
+                >
+                  <option>Skin Tightening</option>
+                  <option>Facial Treatments</option>
+                  <option>Healthy Products</option>
+                </select>
+              </div>
+              <button
+                class="flex justify-center items-center pb-2 mx-auto gap-3 font-secondFamily text-xl text-white border-b-thinFrame transition-transform duration-300 ease-in-out lg:m-0 hover:transform hover:scale-mainScale"
+                type="submit"
+              >
+                BOOK NOW
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <div class="w-full mx-auto md:max-w-tablet lg:max-w-desktop">
+          <div class="flex flex-col justify-between items-center mb-24">
+            <div class="text-center">
+              <span class="subtitle">testimonials</span>
+              <h2 class="heading-secondary">from our satisfied client</h2>
+            </div>
+            <div class="flex flex-col items-center">
+              <div
+                class="flex justify-center items-center w-32 h-32 mb-3 border-thinFrame border-subtitle rounded-full"
+              >
+                <div
+                  class="flex justify-center items-center w-28 h-28 bg-subtitle rounded-full"
+                >
+                  <img
+                    src="images/facial-treatments.png"
+                    alt="facial treatments"
+                  />
+                </div>
+              </div>
+              <span class="text-base text-subtitle uppercase"
+                >facial treatment client</span
+              >
+              <div class="flex items-center gap-5 mt-7 lg:gap-28">
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#e0e0e0"
+                    class="size-6 transition-colors duration-300 group-hover:stroke-accent"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.75 19.5 8.25 12l7.5-7.5"
+                    />
+                  </svg>
+                </button>
+                <p class="text-lg font-light text-text text-center">
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam”
+                </p>
+                <button class="group">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#e0e0e0"
+                    class="size-6 transition-colors duration-300 group-hover:stroke-accent"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="mt-8 mb-3">
+                <ul class="flex gap-2">
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="#f8ec80"
+                      class="size-5"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </li>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="#f8ec80"
+                      class="size-5"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </li>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="#f8ec80"
+                      class="size-5"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </li>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="#f8ec80"
+                      class="size-5"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </li>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="#f8ec80"
+                      class="size-5"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+              <h3
+                class="font-secondFamily text-2xl text-accent capitalize leading-constant tracking-main"
+              >
+                laura johnson
+              </h3>
+              <div class="relative w-1/2 h-heightActiveLine mt-14 bg-border">
+                <span
+                  class="absolute left-0 w-2/6 h-heightActiveLine bg-accent"
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <div class="w-full mx-auto md:max-w-tablet lg:max-w-desktop">
+          <div class="flex flex-col justify-between items-center mb-24">
+            <div
+              class="w-full flex flex-col justify-center items-center mb-10 md:flex-row md:justify-between"
+            >
+              <div class="text-center md:text-left">
+                <span class="subtitle">featured post</span>
+                <h2 class="heading-secondary mb-8 md:mb-0">From Our Blog</h2>
+              </div>
+              <button class="button text-base gap-3">
+                discover more
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div>
+              <ul
+                class="grid grid-cols-1 gap-14 md:grid-cols-2 lg:grid-cols-2 lg:grid-rows-[auto_auto]"
+              >
+                <li
+                  class="flex flex-col md:col-span-2 lg:col-span-1 lg:row-span-2"
+                >
+                  <article class="flex flex-col h-full">
+                    <img
+                      src="images/glowing-skin-article.jpg"
+                      alt="glowing skin article"
+                      class="w-full object-cover lg:h-4/5"
+                    />
+                    <h2 class="article-title">
+                      Unlocking The secrets to glowing skin : essential skincare
+                      tips
+                    </h2>
+                    <p class="article-description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                    <div
+                      class="flex items-center justify-between pt-5 text-base font-light text-text border-t-thinFrame border-accent"
+                    >
+                      <span class="pr-10 border-r-thinFrame border-border"
+                        >Neville Bright</span
+                      >
+                      <span>30 January 2024</span>
+                      <div
+                        class="font-main font-medium text-white px-8 py-2 bg-accent rounded-3xl"
+                      >
+                        Tips
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="lg:col-span-1 lg:row-span-1 overflow-hidden">
+                  <article class="lg:overflow-hidden">
+                    <img
+                      src="images/revealing-beauty-article.jpg"
+                      alt="revealing beauty article"
+                      class="w-full"
+                    />
+                    <h2
+                      class="article-title md:truncate md:overflow-hidden md:whitespace-nowrap"
+                    >
+                      Revealing The beauty within : ...
+                    </h2>
+                    <p class="article-description md:hidden">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                    <div
+                      class="flex items-center justify-between pt-5 text-base font-light text-text border-t-thinFrame border-accent"
+                    >
+                      <span
+                        class="pr-10 border-r-thinFrame border-border md:border-transparent lg:border-border"
+                        >Neville Bright</span
+                      >
+                      <span class="md:hidden lg:block">28 Jan ‘24</span>
+                      <div
+                        class="font-main font-medium px-8 py-2 bg-accent text-white rounded-3xl"
+                      >
+                        Treatment
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="overflow-hidden lg:col-span-1 lg:row-span-1">
+                  <article class="lg:overflow-hidden">
+                    <img
+                      src="images/agent-skincare-article.jpg"
+                      alt="agent skincare article"
+                      class="w-full"
+                    />
+                    <h2
+                      class="article-title md:truncate md:overflow-hidden md:whitespace-nowrap"
+                    >
+                      Unlocking The secrets to glowing skin : essential skincare
+                      tips
+                    </h2>
+                    <p class="article-description md:hidden">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                    <div
+                      class="flex items-center justify-between pt-5 text-base font-light text-text border-t-thinFrame border-accent"
+                    >
+                      <span
+                        class="pr-10 border-r-thinFrame border-border md:border-transparent lg:border-border"
+                        >Neville Bright</span
+                      >
+                      <span class="md:hidden lg:block">26 Jan ‘24</span>
+                      <div
+                        class="font-main font-medium px-8 py-2 bg-accent text-white rounded-3xl"
+                      >
+                        Skincare
+                      </div>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="container mb-0 py-16 bg-accent">
+        <div class="w-full mx-auto md:max-w-tablet lg:max-w-desktop">
+          <div
+            class="flex flex-col gap-12 lg:flex-row lg:justify-between lg:items-center"
+          >
+            <div class="flex flex-col gap-6">
+              <div class="flex items-center">
+                <img src="images/logo.png" alt="logo" />
+                <p class="font-secondFamily text-3xl text-white uppercase">
+                  Aphrodite
+                </p>
+              </div>
+              <p
+                class="text-lg text-white font-light leading-footer tracking-main"
+              >
+                Lorem ipsum dolor sit amet, consectetur <br />elit, sed do
+                eiusmod tempor incididunt.
+              </p>
+            </div>
+            <div>
+              <h2
+                class="font-secondFamily text-2xl text-white capitalize leading-constant tracking-main mb-4"
+              >
+                we’re open at
+              </h2>
+              <div class="flex flex-col gap-3">
+                <p
+                  class="flex items-center gap-3 text-base font-light text-white"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="white"
+                    class="size-5"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm.75-13a.75.75 0 0 0-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 0 0 0-1.5h-3.25V5Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Monday - Friday : 09:00 - 20:00
+                </p>
+                <p
+                  class="flex items-center gap-3 text-base font-light text-white"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="white"
+                    class="size-5"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm.75-13a.75.75 0 0 0-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 0 0 0-1.5h-3.25V5Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Saturday - Sunday : 09:00 - 18:00
+                </p>
+              </div>
+            </div>
+            <div>
+              <h2
+                class="font-secondFamily text-2xl text-white capitalize leading-constant tracking-main mb-4"
+              >
+                get in touch with us
+              </h2>
+              <div class="flex flex-col gap-3">
+                <a
+                  href="#"
+                  class="flex items-center gap-3 text-base font-light text-white"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="white"
+                    class="size-5"
+                  >
+                    <path
+                      d="M3 4a2 2 0 0 0-2 2v1.161l8.441 4.221a1.25 1.25 0 0 0 1.118 0L19 7.162V6a2 2 0 0 0-2-2H3Z"
+                    />
+                    <path
+                      d="m19 8.839-7.77 3.885a2.75 2.75 0 0 1-2.46 0L1 8.839V14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.839Z"
+                    />
+                  </svg>
+                  info@gmail.com</a
+                >
+                <a
+                  href="#"
+                  class="flex items-center gap-3 text-base font-light text-white"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="white"
+                    class="size-5"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="m9.69 18.933.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 1 0 3 9c0 3.492 1.698 5.988 3.355 7.584a13.731 13.731 0 0 0 2.273 1.765 11.842 11.842 0 0 0 .976.544l.062.029.018.008.006.003ZM10 11.25a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Victoria Street, London, United Steed</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
